@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1A95A321500A6A00216E52 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A95A221500A6A00216E52 /* CategoryCell.swift */; };
 		FC512365214FD196008A9CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC512364214FD196008A9CED /* AppDelegate.swift */; };
 		FC512367214FD196008A9CED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC512366214FD196008A9CED /* ViewController.swift */; };
 		FC51236A214FD196008A9CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC512368214FD196008A9CED /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC1A95A221500A6A00216E52 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		FC512361214FD196008A9CED /* GoodEatins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodEatins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC512364214FD196008A9CED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC512366214FD196008A9CED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +66,6 @@
 				FC512377214FD224008A9CED /* View */,
 				FC512378214FD22A008A9CED /* Controller */,
 				FC512364214FD196008A9CED /* AppDelegate.swift */,
-				FC512366214FD196008A9CED /* ViewController.swift */,
 				FC512368214FD196008A9CED /* Main.storyboard */,
 				FC51236B214FD197008A9CED /* Assets.xcassets */,
 				FC51236D214FD197008A9CED /* LaunchScreen.storyboard */,
@@ -86,6 +87,7 @@
 		FC512377214FD224008A9CED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FC1A95A221500A6A00216E52 /* CategoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +95,7 @@
 		FC512378214FD22A008A9CED /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FC512366214FD196008A9CED /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				FC51237A214FD27D008A9CED /* FoodCategory.swift in Sources */,
 				FC512365214FD196008A9CED /* AppDelegate.swift in Sources */,
 				FC51237C214FD2C8008A9CED /* Recipe.swift in Sources */,
+				FC1A95A321500A6A00216E52 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
