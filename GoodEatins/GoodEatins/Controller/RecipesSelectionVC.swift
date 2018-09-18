@@ -14,6 +14,7 @@ class RecipesSelectionVC: UIViewController, UICollectionViewDelegate, UICollecti
     var selectedCategory:String!
     var recipes:[Recipe]!
     let data = DataSet()
+    var recipeToPass: Recipe!
     
 
     override func viewDidLoad() {
@@ -56,7 +57,14 @@ class RecipesSelectionVC: UIViewController, UICollectionViewDelegate, UICollecti
     //This Function Tell the UI to go to next items
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath:
         IndexPath) {
+        recipeToPass = recipes[indexPath.item]
         performSegue(withIdentifier: "toRecipeSelected", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? RecipeDetailVC{
+            detailsVC.selectedRecipe = recipeToPass
+        }
     }
     
 
