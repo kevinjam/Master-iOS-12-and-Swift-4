@@ -2,9 +2,9 @@
 
 ## Screenshots
 
-<img src="/../master/GoodEatins/home.png?raw=true" width="600px" alt="Screenshot 1" />
-<img src="/../master/GoodEatins/homvc.png?raw=true" width="600px" alt="Screenshot 2" />
-<img src="/../master/GoodEatins/recip_detail.png?raw=true" width="600px" alt="Screenshot 3" />
+<img src="/../master/GoodEatins/home.png?raw=true" width="100px" height="200" alt="Screenshot 1" />
+<img src="/../master/GoodEatins/homvc.png?raw=true" width="100px" height="200" alt="Screenshot 2" />
+<img src="/../master/GoodEatins/recip_detail.png?raw=true" width="100px" height="200" alt="Screenshot 3" />
 
 ### If you like the Repository, show some love by clicking :star:  on top right.
 
