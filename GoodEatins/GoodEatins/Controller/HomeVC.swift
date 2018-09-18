@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  GoodEatins
 //
 //  Created by Kevin Janvier on 17/09/2018.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
+class HomeVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
     let data = DataSet()
+    var categoryToPass : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,22 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
+    }
+    
+    //Speciview Row was selected
+    //This Tell us to go to another row
+    //we select the row here and pass the title
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        categoryToPass = data.categories[indexPath.row].title
+        performSegue(withIdentifier: "toRecipesSelection", sender: self)
+    }
+    
+    //This Method send to Recipr Controller
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let recipesVC = segue.destination as? RecipesSelectionVC{
+            recipesVC.selectedCategory = categoryToPass
+            
+        }
     }
     
 }
