@@ -12,9 +12,11 @@
 		FC834E142153E69B000AA2DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC834E122153E69B000AA2DB /* Main.storyboard */; };
 		FC834E162153E69D000AA2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC834E152153E69D000AA2DB /* Assets.xcassets */; };
 		FC834E192153E69D000AA2DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC834E172153E69D000AA2DB /* LaunchScreen.storyboard */; };
-		FC834E222153E8EF000AA2DB /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC834E202153E8EE000AA2DB /* Starjhol.ttf */; };
-		FC834E232153E8EF000AA2DB /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC834E212153E8EE000AA2DB /* Starjedi.ttf */; };
-		FC834E2D2153E9E3000AA2DB /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC834E2C2153E9E2000AA2DB /* Starjout.ttf */; };
+		FCB4875121593136001B287C /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCB4874E21593136001B287C /* Starjedi.ttf */; };
+		FCB4875221593136001B287C /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCB4874F21593136001B287C /* Starjhol.ttf */; };
+		FCB4875321593136001B287C /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCB4875021593136001B287C /* Starjout.ttf */; };
+		FCB487572159353A001B287C /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB487562159353A001B287C /* BlackBgView.swift */; };
+		FCB4875A215935D4001B287C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB48759215935D4001B287C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +27,11 @@
 		FC834E152153E69D000AA2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC834E182153E69D000AA2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC834E1A2153E69D000AA2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC834E202153E8EE000AA2DB /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
-		FC834E212153E8EE000AA2DB /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
-		FC834E2C2153E9E2000AA2DB /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		FCB4874E21593136001B287C /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		FCB4874F21593136001B287C /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		FCB4875021593136001B287C /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		FCB487562159353A001B287C /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
+		FCB48759215935D4001B287C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 				FC834E2A2153E950000AA2DB /* Controller */,
 				FC834E0E2153E69B000AA2DB /* AppDelegate.swift */,
 				FC834E102153E69B000AA2DB /* SelectPersonVC.swift */,
+				FCB48758215935B4001B287C /* Utils */,
 				FC834E282153E934000AA2DB /* resources */,
 				FC834E122153E69B000AA2DB /* Main.storyboard */,
 				FC834E152153E69D000AA2DB /* Assets.xcassets */,
@@ -77,9 +82,9 @@
 		FC834E272153E92C000AA2DB /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FC834E2C2153E9E2000AA2DB /* Starjout.ttf */,
-				FC834E212153E8EE000AA2DB /* Starjedi.ttf */,
-				FC834E202153E8EE000AA2DB /* Starjhol.ttf */,
+				FCB4874E21593136001B287C /* Starjedi.ttf */,
+				FCB4874F21593136001B287C /* Starjhol.ttf */,
+				FCB4875021593136001B287C /* Starjout.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -109,8 +114,17 @@
 		FC834E2B2153E958000AA2DB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FCB487562159353A001B287C /* BlackBgView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FCB48758215935B4001B287C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCB48759215935D4001B287C /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,10 +187,10 @@
 			files = (
 				FC834E192153E69D000AA2DB /* LaunchScreen.storyboard in Resources */,
 				FC834E162153E69D000AA2DB /* Assets.xcassets in Resources */,
+				FCB4875121593136001B287C /* Starjedi.ttf in Resources */,
+				FCB4875221593136001B287C /* Starjhol.ttf in Resources */,
+				FCB4875321593136001B287C /* Starjout.ttf in Resources */,
 				FC834E142153E69B000AA2DB /* Main.storyboard in Resources */,
-				FC834E232153E8EF000AA2DB /* Starjedi.ttf in Resources */,
-				FC834E2D2153E9E3000AA2DB /* Starjout.ttf in Resources */,
-				FC834E222153E8EF000AA2DB /* Starjhol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +203,8 @@
 			files = (
 				FC834E112153E69B000AA2DB /* SelectPersonVC.swift in Sources */,
 				FC834E0F2153E69B000AA2DB /* AppDelegate.swift in Sources */,
+				FCB487572159353A001B287C /* BlackBgView.swift in Sources */,
+				FCB4875A215935D4001B287C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
