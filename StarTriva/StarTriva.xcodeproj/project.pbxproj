@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC326BBA215A7075005B9859 /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC326BB9215A7075005B9859 /* PersonApi.swift */; };
+		FC326BBC215A7596005B9859 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC326BBB215A7596005B9859 /* Person.swift */; };
 		FC834E0F2153E69B000AA2DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC834E0E2153E69B000AA2DB /* AppDelegate.swift */; };
 		FC834E112153E69B000AA2DB /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC834E102153E69B000AA2DB /* SelectPersonVC.swift */; };
 		FC834E142153E69B000AA2DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC834E122153E69B000AA2DB /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC326BB9215A7075005B9859 /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
+		FC326BBB215A7596005B9859 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FC834E0B2153E69B000AA2DB /* StarTriva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTriva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC834E0E2153E69B000AA2DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC834E102153E69B000AA2DB /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
@@ -45,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC326BB8215A7058005B9859 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FC326BB9215A7075005B9859 /* PersonApi.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		FC834E022153E69B000AA2DB = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +81,7 @@
 				FC834E2A2153E950000AA2DB /* Controller */,
 				FC834E0E2153E69B000AA2DB /* AppDelegate.swift */,
 				FC834E102153E69B000AA2DB /* SelectPersonVC.swift */,
+				FC326BB8215A7058005B9859 /* Services */,
 				FCB48758215935B4001B287C /* Utils */,
 				FC834E282153E934000AA2DB /* resources */,
 				FC834E122153E69B000AA2DB /* Main.storyboard */,
@@ -100,6 +113,7 @@
 		FC834E292153E943000AA2DB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC326BBB215A7596005B9859 /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,9 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC326BBC215A7596005B9859 /* Person.swift in Sources */,
 				FC834E112153E69B000AA2DB /* SelectPersonVC.swift in Sources */,
 				FC834E0F2153E69B000AA2DB /* AppDelegate.swift in Sources */,
 				FCB487572159353A001B287C /* BlackBgView.swift in Sources */,
+				FC326BBA215A7075005B9859 /* PersonApi.swift in Sources */,
 				FCB4875A215935D4001B287C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
